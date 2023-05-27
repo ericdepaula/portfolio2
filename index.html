@@ -8,6 +8,15 @@
 
     <title>Portifólio</title>
 
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('6ps-7wIjt2QrqPUrB');
+        })();
+    </script>
+
     <!-- ICONS -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -42,7 +51,8 @@
                 <a href="https://github.com/ericdepaula" target="_blank"><i class='bx bxl-github'></i></i></a>
                 <a href="https://www.instagram.com/eric_depaulin/" target="_blank"><i class='bx bxl-instagram'></i></a>
                 <a href="https://youtube.com/@depaula39" target="_blank"><i class='bx bxl-youtube'></i></a>
-                <a href="https://www.linkedin.com/in/eric-de-paula-bba6a9227/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://www.linkedin.com/in/eric-de-paula-bba6a9227/" target="_blank"><i
+                        class='bx bxl-linkedin'></i></a>
             </div>
             <a href="#" class="btn">Download CV</a>
         </div>
@@ -82,7 +92,7 @@
         <div class="services-container">
             <div class="services-box">
                 <i class='bx bx-code-alt'></i>
-                <h3>Desenvolvedor Web</h3>
+                <h3>Desenvolvimento Web</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus quisquam accusantium praesentium
                     voluptatibus vitae tenetur ea voluptas perferendis aliquid vero!</p>
                 <a href="#contato" class="btn">Saiba mais</a>
@@ -90,7 +100,7 @@
 
             <div class="services-box">
                 <i class='bx bxl-php'></i>
-                <h3>Desenvolvedor FullStack</h3>
+                <h3>Desenvolvimento FullStack</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus quisquam accusantium praesentium
                     voluptatibus vitae tenetur ea voluptas perferendis aliquid vero!</p>
                 <a href="#contato" class="btn">Saiba mais</a>
@@ -98,7 +108,7 @@
 
             <div class="services-box">
                 <i class='bx bxl-java'></i>
-                <h3>Desenvolvedor BackEnd</h3>
+                <h3>Desenvolvimento BackEnd</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus quisquam accusantium praesentium
                     voluptatibus vitae tenetur ea voluptas perferendis aliquid vero!</p>
                 <a href="#contato" class="btn">Saiba Mais</a>
@@ -146,17 +156,13 @@
     <section class="contato" id="contato">
         <h2 class="heading">Contate <span>Me</span></h2>
 
-        <form action="#">
+        <form id="contact-form" method="POST">
             <div class="input-box">
-                <input type="text" placeholder="Nome Completo">
-                <input type="email" placeholder="Endereço de email">
+                <input type="text" id="user_name" placeholder="Nome Completo" required>
+                <input type="email" id="email" placeholder="Endereço de Email" required>
             </div>
-            <div class="input-box">
-                <input type="number" placeholder="+55 (13)981216330">
-                <input type="text" placeholder="Email subject">
-            </div>
-            <textarea name="" id="" cols="30" rows="10"
-                placeholder="Escreva aqui sua mensagem, dúvida ou reclamação"></textarea>
+            <textarea name="" id="message" cols="30" rows="10"
+                placeholder="Escreva aqui sua mensagem, dúvida ou reclamação" required></textarea>
             <input type="submit" value="Enviar" class="btn">
         </form>
     </section>
@@ -164,7 +170,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-text">
-            <p>Copyright &copy; 2023 by InsideOut | Todos os direitos reservados!</p>
+            <p>Copyright &copy; 2023 by Eric | Todos os direitos reservados!</p>
         </div>
 
         <div class="footer-iconTOP">
