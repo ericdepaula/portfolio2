@@ -63,3 +63,32 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1000,
     loop: true
 });
+
+// Envio de email
+
+  document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Impede o envio do formulário
+
+    var templateParams = {
+      from_name: document.getElementById("user_name").value,
+      from_email: document.getElementById("email").value,
+      message: document.getElementById("message").value
+    };
+
+    emailjs.send("service_7udi7sk", "template_jzp5nhd", templateParams)
+      .then(function(response) {
+        console.log("Email enviado com sucesso!", response.status, response.text);
+
+        // Limpando formulário
+        document.getElementById("user_name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+
+        // Mostrando mensagem de alerta
+        alert('Email enviado com sucesso');
+      }, function(error) {
+        console.error("Houve um problema ao enviar o email.", error);
+        // Faça algo em caso de erro, como exibir uma mensagem de erro
+        alert('Email não enviado com sucesso, tente novamente!', error);
+      });
+  });
