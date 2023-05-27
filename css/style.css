@@ -326,7 +326,8 @@ span {
 }
 
 .contato form .input-box input,
-.contato form textarea,  .input-box-num input {
+.contato form textarea,
+.input-box-num input {
   width: 100%;
   padding: 1.5rem;
   font-size: 1.6rem;
@@ -402,7 +403,7 @@ span {
     padding-bottom: 7rem;
   }
 
-  .portifolio  {
+  .portifolio {
     padding-bottom: 7rem;
   }
 
@@ -432,7 +433,7 @@ span {
     display: none;
   }
 
-  .navbar.active{
+  .navbar.active {
     display: block;
   }
 
@@ -469,7 +470,6 @@ span {
 
   .services h2 {
     margin-bottom: 3rem;
-
   }
 
   .portifolio h2 {
@@ -488,14 +488,14 @@ span {
 }
 
 @media (max-width: 465px) {
-  html{
+  html {
     font-size: 50%;
   }
 
-  .contato form .input-box input {
+  .contato form .input-box input,
+  .input-box-num input {
     width: 100%;
   }
-
 }
 
 @media (max-width: 398px) {
@@ -503,7 +503,7 @@ span {
     width: 90vw;
   }
 
-  .about-img img{
+  .about-img img {
     width: 90vw;
   }
 
