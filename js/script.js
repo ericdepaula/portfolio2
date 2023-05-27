@@ -72,7 +72,8 @@ const typed = new Typed('.multiple-text', {
     var templateParams = {
       from_name: document.getElementById("user_name").value,
       from_email: document.getElementById("email").value,
-      message: document.getElementById("message").value
+      message: document.getElementById("message").value,
+      from_number: document.getElementById("number").value
     };
 
     emailjs.send("service_7udi7sk", "template_jzp5nhd", templateParams)
@@ -83,6 +84,7 @@ const typed = new Typed('.multiple-text', {
         document.getElementById("user_name").value = "";
         document.getElementById("email").value = "";
         document.getElementById("message").value = "";
+        document.getElementById("number").value = "";
 
         // Mostrando mensagem de alerta
         alert('Email enviado com sucesso');
