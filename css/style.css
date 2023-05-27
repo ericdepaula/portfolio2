@@ -319,7 +319,7 @@ span {
   margin-bottom: 3rem;
 }
 
-.contato form .input-box {
+.contato form .input-box, .input-box-num {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
