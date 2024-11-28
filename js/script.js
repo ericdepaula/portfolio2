@@ -57,7 +57,7 @@ ScrollReveal().reveal('.home-content p, .about-content ', { origin: 'right' });
 // Typed JS
 
 const typed = new Typed('.multiple-text', {
-    strings: ['Desenvolvedor FrontEnd', 'Professor de Skate', 'Empreendedor'],
+    strings: ['Desenvolvedor FrontEnd', 'Técnico de informática', 'Professor de Skate', 'Músico'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
@@ -90,7 +90,7 @@ const typed = new Typed('.multiple-text', {
         alert('Email enviado com sucesso');
       }, function(error) {
         console.error("Houve um problema ao enviar o email.", error);
-        // Faça algo em caso de erro, como exibir uma mensagem de erro
+        // em caso de erro, exibir uma mensagem de erro
         alert('Email não enviado com sucesso, tente novamente!', error);
       });
   });
